@@ -1,0 +1,69 @@
+table, td {
+    border: none;
+}
+
+tr {
+    padding: 3px;
+    vertical-align: top;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: top;
+    font-size: 12px
+}
+
+.profile {
+    padding-top: 10px;
+}
+
+.left-side {
+    background-color: #eee;
+    padding-left: 5px;
+}
+
+.middle-side {
+    width: 5px;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+td.title {
+    font-weight: 500;
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+}
+
+    td.title > span {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 10px;
+    }
+
+td.header {
+    background-color: #eee;
+    border: darkgray 0.5px solid;
+    padding: 5px 0px 5px 5px;
+    font-weight: 500;
+}
+
+span.name {
+    font-size: 20px;
+}
+span.summary {
+    font-size: 12px;
+}
+
+strong {
+    font-weight: 500;
+}

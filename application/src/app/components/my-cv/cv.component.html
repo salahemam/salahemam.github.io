@@ -1,1 +1,115 @@
-hello my cv
+<table class="custom-table" border="1">
+    <tbody>
+        <tr>
+            <td class="main-content">
+                <!--profile-->
+                <table class="custom-table" border="1">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <span class="name">Salah Eldin Emam</span>
+                                <br />
+                                <span class="summary">{{ careerSummary }}</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!--Education-->
+                <table class="custom-table" border="1">
+                    <thead>
+                        <tr>
+                            <td class="header" colspan="2">
+                                EDUCATION ({{educations.length}})
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding-right:0; padding-left:0">
+                                <table width="100%">
+                                  <ng-container *ngFor="let edu of educations | listFirstPart" >
+                                        <tr>
+                                            <td class="title">{{edu.Place}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{edu.FromYear}} - {{edu.ToYear}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{edu.Speciality}}</td>
+                                        </tr>
+                                  </ng-container>  
+                                </table>
+                            </td>
+
+                            <td>
+                                <table width="100%">
+                                  <ng-container *ngFor="let edu of educations | listLastPart" >
+                                    <tr>
+                                      <td class="title">{{edu.Place}}</td>
+                                  </tr>
+                                  <tr>
+                                      <td>{{edu.FromYear}} - {{edu.ToYear}}</td>
+                                  </tr>
+                                  <tr>
+                                      <td>{{edu.Speciality}}</td>
+                                  </tr>
+                              </ng-container>
+                                 </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Experience-->
+                <table class="custom-table" border="1">
+                  <thead>
+                      <tr>
+                          <td class="header">
+                              WORK EXPERIENCES ({{projects.length}})
+                          </td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <ng-container *ngFor="let exp of experiences" >
+                          <tr>
+                              <td class="title">{{exp.Position}}</td>
+                          </tr>
+                          <tr>
+                              <td>{{exp.Company}} | {{exp.FromDate}} to {{exp.ToDate}} </td>
+                          </tr>
+                          <tr>
+                              <td>{{exp.Description}}</td>
+                          </tr>
+                    </ng-container>
+                  </tbody>
+              </table>
+
+              <!--Projects-->
+              <table class="custom-table" border="1">
+                <thead>
+                    <tr>
+                        <td class="header">
+                            PROJECTS ({{projects.length}})
+                    </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngFor="let proj of projects" >
+                        <tr>
+                            <td class="title">{{proj.Title}} <span>({{proj.Tools}})</span></td>
+                        </tr>
+                        <tr>
+                            <td>{{proj.Description}}</td>
+                        </tr>
+                  </ng-container>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td class="middle-side"></td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>

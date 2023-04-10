@@ -28,7 +28,7 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let edu of educations | listFirstPart">
+                  <ng-container *ngFor="let edu of educations | listLastPart">
                     <tr>
                       <td class="title">{{edu.Place}}</td>
                     </tr>
@@ -44,7 +44,7 @@
 
               <td>
                 <table width="100%">
-                  <ng-container *ngFor="let edu of educations | listLastPart">
+                  <ng-container *ngFor="let edu of educations | listFirstPart">
                     <tr>
                       <td class="title">{{edu.Place}}</td>
                     </tr>
@@ -148,7 +148,7 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let cou of courses | listFirstPart">
+                  <ng-container *ngFor="let cou of courses | listLastPart">
                     <tr>
                       <td class="title">{{ cou.Title }}</td>
                     </tr>
@@ -163,7 +163,7 @@
 
               <td>
                 <table width="100%">
-                  <ng-container *ngFor="let cou of courses | listLastPart">
+                  <ng-container *ngFor="let cou of courses | listFirstPart">
                     <tr>
                       <td class="title">{{ cou.Title }}</td>
                     </tr>
@@ -193,7 +193,7 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let cert of certificates | listFirstPart">
+                  <ng-container *ngFor="let cert of certificates | listLastPart">
                     <tr>
                       <td class="title">{{ cert.Title }}</td>
                     </tr>

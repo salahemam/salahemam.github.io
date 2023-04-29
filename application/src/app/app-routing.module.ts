@@ -12,8 +12,7 @@ const routes: Routes = [
   {path: 'my-cv', component: CVComponent},
   {
     path: '**',
-    redirectTo: '404',
-    pathMatch: 'full'
+    redirectTo: '404'
   }
 ];
 

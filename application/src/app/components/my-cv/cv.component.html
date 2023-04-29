@@ -9,7 +9,11 @@
               <td colspan="2">
                 <span class="name">Salah Eldin Emam</span>
                 <br />
-                <span class="summary">{{ careerSummary }}</span>
+                <span class="summary">
+                  <ng-container *ngFor="let c of careerSummary">
+                    {{c}} <br>
+                  </ng-container>
+                </span>
               </td>
             </tr>
 
@@ -66,7 +70,7 @@
           <thead>
             <tr>
               <td class="header">
-                WORK EXPERIENCES ({{projects.length}})
+                WORK EXPERIENCES ({{experiences.length}})
               </td>
             </tr>
           </thead>
@@ -232,8 +236,8 @@
             <tr>
               <td>
                 <ng-container *ngFor="let info of contactInfos; let i = index;">
-                  <strong>{{ info.Key }}:</strong>
-                  {{info.Value}}
+                  <strong>{{ info.Key }}: </strong>
+                  <span *ngIf="!info.Url">{{info.Value}}</span>
                   <a *ngIf="info.Url" href="{{info.Url}}">{{info.Value}}</a>
 
                   <span *ngIf="i != contactInfos.length - 1"> | </span>

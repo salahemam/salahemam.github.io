@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent {
-  careerSummary: string = `Demonstrated software engineer with +12 years experience and +4 years as a team leader.
-  Worked with different desktop and web technologies using .net, .net core, asp.net, asp.net core, c#, sql server, mongodb, angular, javascript, jquery, html, and css.
-  Have a strong awareness of projects software life cycle including analysis, requirements gathering, planning, design, development, testing, deployment, leadership, mentoring, interviewing, and code reviews.
-  Worked with multiple processes like Agile, Scrum, and Waterfall.`;
+  careerSummary: string[] = [
+    'Demonstrated software engineer with +12 years experience and +4 years as a team leader.',
+    'Worked with different desktop and web technologies using .net, .net core, asp.net, asp.net core, c#, sql server, mongodb, angular, javascript, jquery, html, and css.',
+    'Have a strong awareness of projects software life cycle including analysis, requirements gathering, planning, design, development, testing, deployment, leadership, mentoring, interviewing, refactoring, and code reviews.',
+    'Worked with multiple processes like Agile, Scrum, and Waterfall.'
+  ];
 
   educations: any[] = [
     {
@@ -22,7 +24,7 @@ export class CVComponent {
       Place: "Mubarak Secondary",
       FromYear: 2002,
       ToYear: 2005,
-      Speciality: "Thanawia ‘Amma"
+      Speciality: "Thanawia Amma"
     }
   ];
 
@@ -486,13 +488,13 @@ export class CVComponent {
 
     {
       Key: "Address",
-      Value: "Shoubra Elkhema"
+      Value: "Qalyubia, Egypt"
     },
 
-    {
-      Key: "Mobile",
-      Value: "01001018750"
-    },
+    // {
+    //   Key: "Mobile",
+    //   Value: "01001018750"
+    // },
 
     {
       Key: "Email",

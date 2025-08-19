@@ -6,19 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent {
-  careerSummary: string[] = [
-    'Demonstrated software engineer with +12 years experience and +4 years as a team leader.',
-    'Worked with different desktop and web technologies using .net, .net core, asp.net, asp.net core, c#, sql server, mongodb, angular, javascript, jquery, html, and css.',
-    'Have a strong awareness of projects software life cycle including analysis, requirements gathering, planning, design, development, testing, deployment, leadership, mentoring, interviewing, refactoring, and code reviews.',
-    'Worked with multiple processes like Agile, Scrum, and Waterfall.'
-  ];
+  careerSummary: string = 
+    `Accomplished software engineer with 15+ years of experience, including 5+ years as a team leader and 2 years as Head of Engineering, specializing in delivering high-quality web and desktop solutions. Skilled in a wide range of technologies including .NET, .NET Core, ASP.NET, C#, SQL Server, MongoDB, Angular, and front-end frameworks. Plus working with modern collaboration tools such as JIRA, Slack, Ziplin, VS, VS Code, GitHub, Azure Devops, and Zoom. Adept at the full software development life cycle, from requirements analysis and design to deployment and support, with strong expertise in Agile, Scrum, and Waterfall methodologies. Proven track record in leading and mentoring teams, fostering collaboration, and driving continuous improvement through practices such as code reviews and refactoring. Recognized for strong leadership, stakeholder communication, and passion for building scalable, efficient, and innovative software solutions that exceed client expectations.`;
 
   educations: any[] = [
     {
-      Place: "Faculty of Computer & Information Sciences @ Ainshams University",
+      Place: "Ainshams University",
       FromYear: 2005,
       ToYear: 2009,
-      Speciality: "Information Systems Department"
+      Speciality: "Faculty of Computer & Information Sciences"
     },
     {
       Place: "Mubarak Secondary",
@@ -31,10 +27,18 @@ export class CVComponent {
   experiences: any[] = [
 
     {
-      Position: "Software Team Lead (.Net)",
-      Company: "Qorrect Assessment",
-      FromDate: "MAR-2021",
+      Position: "Head of Engineering",
+      Company: "Qorrect",
+      FromDate: "Jan-2024",
       ToDate: "Present",
+      Url: "https://qorrectassess.com/",
+      Description: "Head of Engineering with proven experience leading cross-functional teams (frontend, backend, mobile, and QA) to deliver high-quality products in agile environments. Skilled in managing feature delivery, deployment, and DevOps processes while ensuring product stability and performance. Experienced in stakeholder communication, client meetings, and team hiring/onboarding. also managing tools such as JIRA, Azure DevOps, and GitHub. Adept at fostering collaboration, reviewing code, and guiding teams to meet organizational objectives efficiently."
+    },
+    {
+      Position: "Software Team Leader (.Net)",
+      Company: "Qorrect",
+      FromDate: "MAR-2021",
+      ToDate: "Dec-2023",
       Url: "https://qorrectassess.com/",
       Description: "Lead the development team (backend & frontend) in an agile environment to work on the company product features (Qorrect Assessment Platform)." +
         "My activities includes leadership, development, interview, refactoring, code reviews, research for best solutions, architecture & design, also act as Scrum Master."
@@ -46,7 +50,7 @@ export class CVComponent {
       FromDate: "Jan-2020",
       ToDate: "MAR-2021",
       Url: "http://www.key2soft.com/",
-      Description: "Delivered educational projects to Saudi client like TETCO software company and Ministry of Education"
+      Description: "Delivered educational projects to Saudi clients like TETCO software company and Ministry of Education"
     },
 
     {
@@ -108,9 +112,17 @@ export class CVComponent {
 
     {
       Title: "Qorrect Assessment",
-      Tools: "C#.Net, ASP.Net MVC Core, SqlServer, Redis, IdentityServer4, Hangfire",
-      Description: "Online exams assessment product which manages exams, teachers, students. It allows teachers to create and assign exams with different questions & layouts for their students."
+      Tools: "C#, .Net Core, ASP.Net WebApis, ASP.Net MVC, SqlServer, Postgres, Redis, IdentityServer4, Hangfire",
+      Description: "Smart assessment product which manages examinations for both examiners & examinees, delivered online or on papers using web, tablet, and mobile devices. It allows examiners to create and assign exams with different questions & layouts for their examinees."
     },
+
+    
+    {
+      Title: "Marking System",
+      Tools: "C#, .Net Core, ASP.Net WebApis, SqlServer, Postgres, Redis, JWT",
+      Description: "A product to facilitae the examinees answers marking in an easy and collaborative way while the marking tasks are assigned randomly or manually to the markers."
+    },
+
 
     {
       Title: "Key2Learn",
@@ -271,7 +283,7 @@ export class CVComponent {
     "JSON", "XML", "WCF",
     "MongoDB (Query, Aggregation, Performance)",
     "SQL Server", "SSIS",
-    "Oracle", "MS Access",
+    "Oracle", "MS Access", "Postgres",
     "Crystal Reports", "iReport", "SSRS",
     "Cloud (Amazon, Azure)",
     "Git", "TFVS", "JIRA",
@@ -281,17 +293,73 @@ export class CVComponent {
   ];
 
   personalSkills: string[] = [
-    "Good Leadership skills",
+    "Great Leadership & Management skills",
     "Committed",
     "Analytical",
     "Love Thinking",
     "Cooperative",
     "Hard Worker",
     "Team Player",
-    "Organized"
+    "Well Organized"
   ];
 
   courses: any[] = [
+
+    {
+      Title: "PMP Preparation Course - InProgress",
+      IsOnline: true,
+      Place: "net3lem.com",
+      Date: "September 2025"
+    },
+    {
+      Title: "PMP & Agile Free Webinar",
+      IsOnline: true,
+      Place: "net3lem.com",
+      Date: "August 2025"
+    },
+    
+{
+      Title: "EF Core 6 Fundamentals",
+      IsOnline: true,
+      Place: "Pluralsight",
+      Date: "July 2023"
+    },
+    {
+      Title: "SOLID Principles for C# Developers",
+      IsOnline: true,
+      Place: "Pluralsight",
+      Date: "August 2023"
+    },
+    {
+      Title: "Top 1%: Software Architecture Series",
+      IsOnline: true,
+      Place: "Pluralsight",
+      Date: "July 2023"
+    },
+    {
+      Title: "Microservices Architecture in Arabic",
+      IsOnline: true,
+      Place: "Youtube",
+      Date: "November 2024"
+    },
+    {
+      Title: "Microservices Architecture and Design",
+      IsOnline: true,
+      Place: "Youtube",
+      Date: "November 2024"
+    },
+    {
+      Title: "saga pattern: distributed transactions",
+      IsOnline: true,
+      Place: "Youtube",
+      Date: "November 2024"
+    },
+    {
+      Title: "Introduction to Microservices - DotnetMastery",
+      IsOnline: true,
+      Place: "Youtube",
+      Date: "November 2024"
+    },
 
     {
       Title: "Get Started With .Net Core Identity Server 4",
@@ -463,7 +531,7 @@ export class CVComponent {
 
   languages: string[] = [
     "Arabic (Native)",
-    "English (Very Good)"
+    "English (Excellent)"
   ];
 
   personalInfos: any[] = [

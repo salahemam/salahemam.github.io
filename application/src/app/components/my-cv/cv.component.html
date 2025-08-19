@@ -1,18 +1,16 @@
+
 <table class="custom-table" border="1">
   <tbody>
     <tr>
       <td class="main-content">
+        <h1 style="text-align: center;">Salah Eldin Emam</h1>
         <!--profile-->
         <table class="custom-table" border="1">
           <tbody>
             <tr>
               <td colspan="2">
-                <span class="name">Salah Eldin Emam</span>
-                <br />
                 <span class="summary">
-                  <ng-container *ngFor="let c of careerSummary">
-                    {{c}} <br>
-                  </ng-container>
+                  {{careerSummary}}
                 </span>
               </td>
             </tr>
@@ -32,31 +30,10 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let edu of educations | listLastPart">
+                  <ng-container *ngFor="let edu of educations">
                     <tr>
-                      <td class="title">{{edu.Place}}</td>
-                    </tr>
-                    <tr>
+                      <td style="font-weight: bold;">{{edu.Speciality}} - {{edu.Place}}</td>
                       <td>{{edu.FromYear}} - {{edu.ToYear}}</td>
-                    </tr>
-                    <tr>
-                      <td>{{edu.Speciality}}</td>
-                    </tr>
-                  </ng-container>
-                </table>
-              </td>
-
-              <td>
-                <table width="100%">
-                  <ng-container *ngFor="let edu of educations | listFirstPart">
-                    <tr>
-                      <td class="title">{{edu.Place}}</td>
-                    </tr>
-                    <tr>
-                      <td>{{edu.FromYear}} - {{edu.ToYear}}</td>
-                    </tr>
-                    <tr>
-                      <td>{{edu.Speciality}}</td>
                     </tr>
                   </ng-container>
                 </table>
@@ -125,19 +102,7 @@
           </tbody>
         </table>
 
-        <!--personal skills-->
-        <table class="custom-table" border="1">
-          <tbody>
-            <tr>
-              <td class="header">
-                PERSONAL SKILLS
-              </td>
-            </tr>
-            <tr>
-              <td>{{ personalSkills.join(' | ') }}</td>
-            </tr>
-          </tbody>
-        </table>
+        
 
         <!--Courses-->
         <table class="custom-table" border="1">
@@ -197,34 +162,35 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let cert of certificates | listLastPart">
+                  <ng-container *ngFor="let cert of certificates">
                     <tr>
-                      <td class="title">{{ cert.Title }}</td>
+                      <td style="font-weight: bold;">{{ cert.Title }}</td>
+                      <td>{{ cert.Place }} | {{ cert.Date }} </td>
                     </tr>
                     <tr>
-                      <td>{{ cert.Place }} | {{ cert.Date }} </td>
+                      
                     </tr>
                   </ng-container>
                 </table>
               </td>
-
-              <td>
-                <table width="100%">
-                  <ng-container *ngFor="let cert of certificates | listFirstPart">
-                    <tr>
-                      <td class="title">{{ cert.Title }}</td>
-                    </tr>
-                    <tr>
-                      <td>{{ cert.Place }} | {{ cert.Date }} </td>
-                    </tr>
-                  </ng-container>
-                </table>
-              </td>
-            </tr>
-
-
+</tr>
           </tbody>
         </table>
+
+        <!--personal skills-->
+        <table class="custom-table" border="1">
+          <tbody>
+            <tr>
+              <td class="header">
+                PERSONAL SKILLS
+              </td>
+            </tr>
+            <tr>
+              <td>{{ personalSkills.join(' | ') }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
         <!--personal-->
         <table class="custom-table" border="1">
           <tbody>

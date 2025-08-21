@@ -349,7 +349,7 @@ export class CVComponent {
       Date: "November 2024"
     },
     {
-      Title: "saga pattern: distributed transactions",
+      Title: "Saga pattern: distributed transactions",
       IsOnline: true,
       Place: "Youtube",
       Date: "November 2024"
@@ -556,7 +556,7 @@ export class CVComponent {
 
     {
       Key: "Address",
-      Value: "Qalyubia, Egypt"
+      Value: "Cairo, Egypt"
     },
 
     // {

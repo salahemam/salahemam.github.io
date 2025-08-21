@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset margins */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page background */
+body {
+  background: #f0f2f5; /* light gray background */
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px; /* space around the CV */
+}
+
+/* CV content wrapper */
+.cv-container {
+  background: #fff;          /* white paper look */
+  max-width: 800px;          /* good reading width */
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow */
+  border-radius: 6px;
+}
+
+/* Print-friendly settings */
+@media print {
+  body {
+    background: none;        /* remove background color for printers */
+    padding: 0;
+  }
+  .cv-container {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+    padding: 20px;
+  }
+}

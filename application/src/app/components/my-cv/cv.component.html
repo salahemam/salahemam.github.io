@@ -118,12 +118,12 @@
             <tr>
               <td style="padding-right:0; padding-left:0">
                 <table width="100%">
-                  <ng-container *ngFor="let cou of courses | listLastPart">
+                  <ng-container *ngFor="let cou of courses | listFirstPart">
                     <tr>
                       <td class="title">{{ cou.Title }}</td>
                     </tr>
                     <tr>
-                      <td>{{ cou.Place }} | {{cou.Date}}
+                      <td>{{ cou.Place }} | {{formatDate(cou.Date)}}
                         <span *ngIf="cou.IsOnline"> | Online </span>
                       </td>
                     </tr>
@@ -133,12 +133,12 @@
 
               <td>
                 <table width="100%">
-                  <ng-container *ngFor="let cou of courses | listFirstPart">
+                  <ng-container *ngFor="let cou of courses | listLastPart">
                     <tr>
                       <td class="title">{{ cou.Title }}</td>
                     </tr>
                     <tr>
-                      <td>{{ cou.Place }} | {{cou.Date}}
+                      <td>{{ cou.Place }} | {{formatDate(cou.Date)}}
                         <span *ngIf="cou.IsOnline"> | Online </span>
                       </td>
                     </tr>

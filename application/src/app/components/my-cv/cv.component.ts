@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent {
-  careerSummary: string = 
+  careerSummary: string =
     `Accomplished software engineer with 15+ years of experience, including 5+ years as a team leader and 2 years as Head of Engineering, specializing in delivering high-quality web and desktop solutions. Skilled in a wide range of technologies including .NET, .NET Core, ASP.NET, C#, SQL Server, MongoDB, Angular, and front-end frameworks. Plus working with modern collaboration tools such as JIRA, Slack, Ziplin, VS, VS Code, GitHub, Azure Devops, and Zoom. Adept at the full software development life cycle, from requirements analysis and design to deployment and support, with strong expertise in Agile, Scrum, and Waterfall methodologies. Proven track record in leading and mentoring teams, fostering collaboration, and driving continuous improvement through practices such as code reviews and refactoring. Recognized for strong leadership, stakeholder communication, and passion for building scalable, efficient, and innovative software solutions that exceed client expectations.`;
 
   educations: any[] = [
@@ -116,7 +116,7 @@ export class CVComponent {
       Description: "Smart assessment product which manages examinations for both examiners & examinees, delivered online or on papers using web, tablet, and mobile devices. It allows examiners to create and assign exams with different questions & layouts for their examinees."
     },
 
-    
+
     {
       Title: "Marking System",
       Tools: "C#, .Net Core, ASP.Net WebApis, SqlServer, Postgres, Redis, JWT",
@@ -309,225 +309,225 @@ export class CVComponent {
       Title: "PMP Preparation Course - InProgress",
       IsOnline: true,
       Place: "net3lem.com",
-      Date: "September 2025"
+      Date: new Date(2025, Months.September)
     },
     {
-      Title: "PMP & Agile Free Webinar",
+      Title: "Agile Frameworks Webinar",
       IsOnline: true,
       Place: "net3lem.com",
-      Date: "August 2025"
+      Date: new Date(2025, Months.August)
     },
-    
-{
+
+    {
       Title: "EF Core 6 Fundamentals",
       IsOnline: true,
       Place: "Pluralsight",
-      Date: "July 2023"
+      Date: new Date(2025, Months.July)
     },
     {
       Title: "SOLID Principles for C# Developers",
       IsOnline: true,
       Place: "Pluralsight",
-      Date: "August 2023"
+      Date: new Date(2023, Months.August)
     },
     {
       Title: "Top 1%: Software Architecture Series",
       IsOnline: true,
       Place: "Pluralsight",
-      Date: "July 2023"
+      Date: new Date(2023, Months.July)
     },
     {
       Title: "Microservices Architecture in Arabic",
       IsOnline: true,
       Place: "Youtube",
-      Date: "November 2024"
+      Date: new Date(2024, Months.November)
     },
     {
       Title: "Microservices Architecture and Design",
       IsOnline: true,
       Place: "Youtube",
-      Date: "November 2024"
+      Date: new Date(2024, Months.November)
     },
     {
       Title: "Saga pattern: distributed transactions",
       IsOnline: true,
       Place: "Youtube",
-      Date: "November 2024"
+      Date: new Date(2024, Months.November)
     },
     {
       Title: "Introduction to Microservices - DotnetMastery",
       IsOnline: true,
       Place: "Youtube",
-      Date: "November 2024"
+      Date: new Date(2024, Months.November)
     },
 
     {
       Title: "Get Started With .Net Core Identity Server 4",
       IsOnline: true,
       Place: "Udemy",
-      Date: "June 2021"
+      Date: new Date(2021, Months.June)
     },
 
     {
       Title: "Learn Amazon web services (AWS): The complete introduction",
       IsOnline: true,
       Place: "Udemy",
-      Date: "Feb 2021"
+      Date: new Date(2021, Months.February)
     },
 
     {
       Title: "MongoDB Basics",
       IsOnline: true,
       Place: "MongoDB University",
-      Date: "October 2020"
+      Date: new Date(2020, Months.October)
     },
 
     {
       Title: "MongoDB Aggregation Framework",
       IsOnline: true,
       Place: "MongoDB University",
-      Date: "October 2020"
+      Date: new Date(2020, Months.October)
     },
 
     {
       Title: "MongoDB Performance",
       IsOnline: true,
       Place: "MongoDB University",
-      Date: "October 2020"
+      Date: new Date(2020, Months.October)
     },
 
     {
       Title: "MongoDB for Python Developers",
       IsOnline: true,
       Place: "MongoDB University",
-      Date: "October 2020"
+      Date: new Date(2020, Months.October)
     },
 
     {
       Title: "Angular 9 - The Complete Guide 2020 Edition",
       IsOnline: true,
       Place: "Udemy",
-      Date: "June 2020"
+      Date: new Date(2020, Months.October)
     },
 
     {
       Title: "Leadership Skills",
       IsOnline: true,
       Place: "E3melBusiness Academy",
-      Date: "July 2019"
+      Date: new Date(2019, Months.July)
     },
 
     {
       Title: "Professional CEO",
       IsOnline: true,
       Place: "E3melBusiness Academy",
-      Date: "July 2019"
+      Date: new Date(2019, Months.July)
     },
 
     {
       Title: "Modern Software Architecture",
       Place: "SECC-ITIDA",
-      Date: "June 2019"
+      Date: new Date(2019, Months.June)
     },
 
     {
       Title: "SECC Agile Foundation",
       Place: "SECC-ITIDA",
-      Date: "April 2018"
+      Date: new Date(2018, Months.April)
     },
 
     {
       Title: "Mastering the Basics of SQL Server Query Optimization",
       IsOnline: true,
       Place: "Udemy",
-      Date: "Jan 2018"
+      Date: new Date(2018, Months.January)
     },
 
     {
       Title: "Mini MBA",
       Place: "Smart Vision",
-      Date: "Jan 2018"
+      Date: new Date(2018, Months.January)
     },
 
     {
       Title: "Developing Microsoft SharePoint Server 2013 Core Solutions",
       Place: "New Horizons",
-      Date: "June 2015"
+      Date: new Date(2015, Months.June)
     },
 
     {
       Title: "Cloud Business Essentials",
       Place: "ITSynergy",
-      Date: "January 2014"
+      Date: new Date(2014, Months.January)
     },
 
     {
       Title: "Android Application Development",
       Place: "Asgatech",
-      Date: "March 2014"
+      Date: new Date(2014, Months.March)
     },
 
     {
       Title: "Code Refactoring Techniques",
       Place: "SECC-ITIDA",
-      Date: "June 2013"
+      Date: new Date(2013, Months.June)
     },
 
     {
       Title: "Test Driven Development",
       Place: "SECC-ITIDA",
-      Date: "June 2013"
+      Date: new Date(2013, Months.June)
     },
 
     {
       Title: "Berlitz Prociency Level 1 (English Course)",
       Place: "Berlitz",
-      Date: "April 2012"
+      Date: new Date(2012, Months.April)
     },
     //
 
     {
       Title: "[Arabic - بالعربي] Entity Framework Core",
       Place: "Youtube",
-      Date: "June 2022",
+      Date: new Date(2022, Months.June),
       IsOnline: true
     },
 
     {
       Title: "Microservices: The Big Picture",
       Place: "Pluralsight",
-      Date: "June 2022",
+      Date: new Date(2022, Months.June),
       IsOnline: true
     },
 
     {
       Title: "ASP.NET Core Microservices: Getting Started",
       Place: "Pluralsight",
-      Date: "June 2022",
+      Date: new Date(2022, Months.June),
       IsOnline: true
     },
 
     {
       Title: "Simplified .Net Background Tasks with Hangfire 1",
       Place: "Pluralsight",
-      Date: "June 2022",
+      Date: new Date(2022, Months.June),
       IsOnline: true
     },
 
     {
       Title: "Clean Architecture: Patterns, Practices, and Principles",
       Place: "Pluralsight",
-      Date: "June 2022",
+      Date: new Date(2022, Months.June),
       IsOnline: true
     },
 
     {
       Title: "سلسلة سكروم باللغة العربية",
       Place: "Youtube",
-      Date: "August 2022",
+      Date: new Date(2022, Months.August),
       IsOnline: true
     },
-  ]
+  ].sort((a, b) => b.Date.getTime() - a.Date.getTime());
 
   languages: string[] = [
     "Arabic (Native)",
@@ -590,4 +590,26 @@ export class CVComponent {
       Url: "http://www.cloudcredential.org/"
     }
   ];
+
+  formatDate(date: Date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+
+    return `${month}-${year}`; // Example: "2025-08-25"
+  }
 }
+
+enum Months {
+  January = 0,
+  February = 1,
+  March = 2,
+  April = 3,
+  May = 4,
+  June = 5,
+  July = 6,
+  August = 7,
+  September = 8,
+  October = 9,
+  November = 10,
+  December = 11
+} 

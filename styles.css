@@ -142,6 +142,69 @@ h2 {
 h4 { margin:0 0 6px 0; font-weight:600; }
 p, li { margin:4px 0; padding:0; }
 
+
+/* CONTACT LINKS UI */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(245,247,255,0.85));
+  border: 1px solid rgba(15,23,42,0.06);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+  font-size: 14px;
+  box-shadow: 0 4px 14px rgba(12,18,30,0.04);
+}
+
+.contact-item:hover {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-1));
+  color: white;
+  box-shadow: 0 6px 20px rgba(111,66,193,0.15);
+  transform: translateY(-1px);
+}
+
+.contact-item .icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.contact-item .label {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.contact-item .value {
+  font-weight: 400;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+/* Make it stack nicely on mobile */
+@media (max-width: 600px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .contact-item .label {
+    min-width: auto;
+  }
+}
+
+
+
 /* RESPONSIVE */
 @media (max-width:920px) {
   .nav-links { display:none; }
@@ -247,5 +310,21 @@ p, li { margin:4px 0; padding:0; }
   section {
     page-break-after: auto;
   }
+
+    /* Distinguish items in Projects & Experience sections */
+  #projects .item,
+  #experience .item {
+    border-bottom: 1px dashed #ccc;    /* light dotted divider */
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+
+  /* Remove border from the last item in each section */
+  #projects .item:last-child,
+  #experience .item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
 }
 
